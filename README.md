@@ -1,4 +1,4 @@
-# ESP Captive LittleFS — Portal cautivo (ESP8266) sin microSD
+# Open Folder Proyect - Portal cautivo con LittleFS (sobre un NODEMCU ESP8266) sin microSD
 
 Este proyecto pone en marcha un portal cautivo abierto en un NodeMCU / ESP8266 usando LittleFS (almacenamiento interno). Permite listar y descargar archivos, restringe la subida a un administrador y ofrece opciones de personalización (encabezado y pie de página).
 
