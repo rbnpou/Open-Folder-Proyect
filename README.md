@@ -8,12 +8,11 @@ Características principales
 - Usuarios anónimos: solo pueden navegar y descargar; no pueden subir archivos.
 - Administrador (HTTP Basic Auth): puede subir archivos (sin límites), borrar archivos y editar el encabezado y pie de página que se muestran en la portada.
 - Validación de extensiones permitidas en servidor.
-- Sistema de metadatos: `/meta.csv` registra: storedName|displayName|ownerIP|size
 - Indicadores en la UI: nivel de batería (A0) y espacio en disco (estimado por LittleFS).
 - Código pensado para consumo moderado de recursos en ESP8266.
 
 Archivos incluidos
-- `esp_captive_littlefs.ino` — sketch principal (LittleFS).
+- `open_folder_proyect.ino` — sketch principal (LittleFS).
 - `README.md` — este archivo.
 - `.gitignore` — archivos a ignorar en repositorios.
 - `LICENSE` — licencia MIT (plantilla).
@@ -32,10 +31,10 @@ Wiring básico (si mides batería)
 
 Uso rápido
 1. Abre Arduino IDE (o PlatformIO) con soporte ESP8266 instalado.
-2. Copia `esp_captive_littlefs.ino` en un nuevo sketch o en la carpeta del proyecto.
+2. Copia `open_folder_proyect.ino` en un nuevo sketch o en la carpeta del proyecto.
 3. Configura las constantes (ADMIN_USER/ADMIN_PASS, SD_CS no aplica, etc.).
 4. Selecciona la placa NodeMCU/Generic ESP8266 y sube el sketch.
-5. Conéctate al AP `ESP_Captive_LittleFS` (sin contraseña).
+5. Conéctate al AP `📂Open Folder Proyect` (sin contraseña).
 6. Abre un navegador y dirígete a `http://192.168.4.1/` (o cualquier URL — el DNS captura y redirige al portal).
 7. Para administración: visita `http://192.168.4.1/admin` y proporciona las credenciales.
 
@@ -58,10 +57,6 @@ Seguridad y privacidad
 - Protege el panel admin con una contraseña fuerte. En un repositorio público no incluyas credenciales reales.
 - Si necesitas auditoría o restricciones más estrictas, considera migrar a ESP32 o añadir autenticación adicional.
 
-Cómo publicar en GitHub
-- Crea un repo `esp_captive_littlefs` en tu cuenta y sube los archivos listados arriba.
-- Recomendación: añade `ADMIN_PASS` como ejemplo (e.g. "changeme") y documenta en el README que debe ser cambiado antes de usar.
-
 Solución de problemas rápida
 - LittleFS.begin() falla: revisa la versión del core ESP8266 o considera formateo (solo para pruebas).
 - Subidas fallan: asegúrate de cargar el panel admin en el navegador (Basic Auth) antes de usar la UI de subida o usar el formulario tradicional (sin AJAX).
@@ -69,6 +64,4 @@ Solución de problemas rápida
 
 Licencia
 - MIT (archivo LICENSE incluido).
-
-¿Necesitas que te entregue este README en un fichero .md descargable (zip), o que lo publique yo en tu repo GitHub? Si quieres que lo suba al repositorio, dime si quieres que cree el repo público o privado bajo `rbnpou/esp_captive_littlefs` y, si autorizas, procederé.
 ```
