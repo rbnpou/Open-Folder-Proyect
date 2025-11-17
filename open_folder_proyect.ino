@@ -12,13 +12,13 @@
 #include <DNSServer.h>
 #include <LittleFS.h>
 
-const char* apSSID = "ESP_Captive_LittleFS";
+const char* apSSID = "📂Open Folder Proyect";
 const byte DNS_PORT = 53;
 const IPAddress apIP(192,168,4,1);
 
 // Admin credentials (CAMBIA ESTO antes de desplegar)
 const char* ADMIN_USER = "admin";
-const char* ADMIN_PASS = "changeme";
+const char* ADMIN_PASS = "change_me";
 
 // Cuota por cliente en bytes (ej. 2 MB) -- sigue aplicando a usuarios normales
 const size_t QUOTA_PER_CLIENT = 2 * 1024 * 1024UL;
