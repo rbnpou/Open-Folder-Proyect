@@ -14,7 +14,6 @@ Características principales
 Archivos incluidos
 - `open_folder_proyect.ino` — sketch principal (LittleFS).
 - `README.md` — este archivo.
-- `.gitignore` — archivos a ignorar en repositorios.
 - `LICENSE` — licencia MIT (plantilla).
 
 Ajustes recomendados antes de usar
